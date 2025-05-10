@@ -1,0 +1,1 @@
+assets folder is for images, videos, and other files for website
