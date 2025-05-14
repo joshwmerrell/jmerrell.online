@@ -26,6 +26,11 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.logo{
+    width: 50px;
+    display: inline-block;
+}
+
 .site-title {
     font-family: 'Brush Script MT', cursive;
     font-size: 3rem;
