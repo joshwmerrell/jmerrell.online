@@ -52,7 +52,7 @@ nav ul li a {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url('../assets/workspace.jpg');
+    background-image: url('../assets/home/workspace.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
