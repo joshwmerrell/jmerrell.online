@@ -78,7 +78,7 @@ import setup_values
 windows = setup_values.windows
 linux = setup_values.linux
 macos = setup_values.macos
-other = setup_values.linux
+other = setup_values.other
 
 if windows :
     def clear() :
