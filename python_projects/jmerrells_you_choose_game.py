@@ -72,10 +72,52 @@ def pleasechoose4() :
 # First, we want to determine what OS our player is running so that we can clear and write in the terminal of the OS properly for each senario.
 
 import os
-import jmerrells_python_projects
 
-def clear():
-    jmerrells_python_projects.clear()
+
+
+
+OS = 0
+
+print()
+while OS == 0 :
+    
+    print("    Enter 'quit' if you want to exit the program.")
+    space()
+    print()
+    print("    Before we begin, which operating system are you using?")
+    print()
+    print("        1  WINDOWS\n        2  LINUX\n        3  MACOS\n        4  OTHER\n")
+    choice = input("        > ")
+
+    windows = choice == "1" or choice.lower() == "one" or choice.lower() == "i am using windows." or choice.lower() == "windows"
+    linux = choice == "2" or choice.lower() == "two" or choice.lower() == "i am using linux." or choice.lower() == "linux"
+    macos = choice == "3" or choice.lower() == "three" or choice.lower() == "i am using macos." or choice.lower() == "macos"
+    other = choice == "4" or choice.lower() == "four" or choice.lower() == "i am using something else." or choice.lower() == "other"
+    quit_game = choice.lower() == "quit" or choice.lower() == "'quit'"
+
+    if windows :
+        def clear() :
+            os.system('cls')
+        OS = 1
+
+    elif linux or macos:
+        def clear() :
+            os.system('clear')
+        OS = 1
+
+    elif other :
+        def clear() :
+            space()
+        OS = 1
+
+    elif quit_game :
+        quit()
+    
+    else :
+        pleasechoose4()
+        OS = 0
+
+clear()
 
 
 
