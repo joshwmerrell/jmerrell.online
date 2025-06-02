@@ -72,7 +72,7 @@ def pleasechoose4() :
 # First, we want to determine what OS our player is running so that we can clear and write in the terminal of the OS properly for each senario.
 
 import os
-# import setup_values
+import setup_values
 
 
 # windows = setup_values.os == "windows"
