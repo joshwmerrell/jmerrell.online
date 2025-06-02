@@ -87,12 +87,18 @@ while OS == 0 :
     print("    Before we begin, which operating system are you using?")
     print()
     print("        1  WINDOWS\n        2  LINUX\n        3  MACOS\n        4  OTHER\n")
-    choice = input("        > ")
 
-    windows = choice == "1" or choice.lower() == "one" or choice.lower() == "i am using windows." or choice.lower() == "windows"
-    linux = choice == "2" or choice.lower() == "two" or choice.lower() == "i am using linux." or choice.lower() == "linux"
-    macos = choice == "3" or choice.lower() == "three" or choice.lower() == "i am using macos." or choice.lower() == "macos"
-    other = choice == "4" or choice.lower() == "four" or choice.lower() == "i am using something else." or choice.lower() == "other"
+    import jmerrells_python_projects
+
+    already_chose_os = jmerrells_python_projects.windows or jmerrells_python_projects.linux or jmerrells_python_projects.macos or jmerrells_python_projects.other
+    
+    if not already_chose_os:
+        choice = input("        > ")
+
+    windows = choice == ("1" or choice.lower() == "one" or choice.lower() == "i am using windows." or choice.lower() == "windows") or jmerrells_python_projects.windows
+    linux = choice == ("2" or choice.lower() == "two" or choice.lower() == "i am using linux." or choice.lower() == "linux") or jmerrells_python_projects.linux
+    macos = choice == ("3" or choice.lower() == "three" or choice.lower() == "i am using macos." or choice.lower() == "macos") or jmerrells_python_projects.macos
+    other = choice == ("4" or choice.lower() == "four" or choice.lower() == "i am using something else." or choice.lower() == "other") or jmerrells_python_projects.other
     quit_game = choice.lower() == "quit" or choice.lower() == "'quit'"
 
     if windows :
