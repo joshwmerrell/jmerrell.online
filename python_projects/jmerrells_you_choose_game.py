@@ -75,10 +75,10 @@ import os
 import setup_values
 
 
-windows = setup_values.which_os == windows
-linux = setup_values.which_os == linux
-macos = setup_values.which_os == macos
-other = setup_values.which_os == other
+windows = setup_values.windows
+linux = setup_values.linux
+macos = setup_values.macos
+other = setup_values.linux
 
 if windows :
     def clear() :
