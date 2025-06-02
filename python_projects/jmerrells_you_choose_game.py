@@ -29,8 +29,6 @@
 
 
 # For less redundancy, let's define some general functions for our program.
-import jmerrells_python_projects
-
 
 def space():
     print()
@@ -83,8 +81,8 @@ OS = 0
 print()
 while OS == 0 :
     
-    print("    Enter 'quit' if you want to exit.")
-    print()
+    print("    Enter 'quit' if you want to exit the program.")
+    space()
     print()
     print("    Before we begin, which operating system are you using?")
     print()
@@ -100,28 +98,24 @@ while OS == 0 :
     if windows :
         def clear() :
             os.system('cls')
-        windows = 1
         OS = 1
 
     elif linux or macos:
         def clear() :
             os.system('clear')
         OS = 1
-        linux = 1
 
     elif other :
         def clear() :
             space()
         OS = 1
-        other = 1
 
     elif quit_game :
         quit()
     
     else :
-        please_choose_4()
+        pleasechoose4()
         OS = 0
-        other = 1
 
 clear()
 
@@ -151,7 +145,7 @@ clear()
 
 print("    At any time, if you want to end the adventure, enter 'quit' into a prompt.")
 space()
-print("    WELCOME TO JMERRELL'S YOU-CHOOSE ADVENTURE GAME!")
+print("    WELCOME TO JOSHUA'S YOU-CHOOSE ADVENTURE GAME!")
 print()
 print("    You are going to find yourself lost in the woods.")
 print("    You will need to be found in order to escape the woods and win the game.")
