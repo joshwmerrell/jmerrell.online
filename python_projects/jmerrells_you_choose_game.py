@@ -75,22 +75,22 @@ import os
 import setup_values
 
 
-# windows = setup_values.os == "windows"
-# linux = setup_values.os == "linux"
-# macos = setup_values.os == "macos"
-# other = setup_values.os == "other"
+windows = setup_values.which_os == "windows"
+linux = setup_values.which_os == "linux"
+macos = setup_values.which_os == "macos"
+other = setup_values.which_os == "other"
 
-# if windows :
-#     def clear() :
-#         os.system('cls')
+if windows :
+    def clear() :
+        os.system('cls')
 
-# elif linux or macos:
-#     def clear() :
-#         os.system('clear')
+elif linux or macos:
+    def clear() :
+        os.system('clear')
 
-# elif other :
-#     def clear() :
-#         space()
+elif other :
+    def clear() :
+        space()
 
 
 
