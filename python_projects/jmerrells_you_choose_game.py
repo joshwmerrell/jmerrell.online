@@ -72,34 +72,10 @@ def pleasechoose4() :
 # First, we want to determine what OS our player is running so that we can clear and write in the terminal of the OS properly for each senario.
 
 import os
-
-
-
-
 import jmerrells_python_projects
 
-
-windows = jmerrells_python_projects.windows
-linux = jmerrells_python_projects.linux
-macos = jmerrells_python_projects.macos
-other = jmerrells_python_projects.other
-
-if windows :
-    def clear() :
-        os.system('cls')
-
-elif linux or macos:
-    def clear() :
-        os.system('clear')
-
-elif other :
-    def clear() :
-        space()
-
-else :
-    quit()
-
-clear()
+def clear():
+    jmerrells_python_projects.clear()
 
 
 
