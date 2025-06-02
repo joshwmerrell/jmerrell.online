@@ -92,7 +92,7 @@ while OS == 0 :
     
     import jmerrells_python_projects
 
-    already_chose_os = jmerrells_python_projects.windows or jmerrells_python_projects.linux or jmerrells_python_projects.macos or jmerrells_python_projects.other
+    already_chose_os = jmerrells_python_projects.OS == 1
     
     if already_chose_os ;
         windows = jmerrells_python_projects.windows
