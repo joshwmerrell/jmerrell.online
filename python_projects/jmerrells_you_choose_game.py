@@ -145,7 +145,7 @@ clear()
 
 print("    At any time, if you want to end the adventure, enter 'quit' into a prompt.")
 space()
-print("    WELCOME TO JOSHUA'S YOU-CHOOSE ADVENTURE GAME!")
+print("    WELCOME TO JMERRELL'S YOU-CHOOSE ADVENTURE GAME!")
 print()
 print("    You are going to find yourself lost in the woods.")
 print("    You will need to be found in order to escape the woods and win the game.")
