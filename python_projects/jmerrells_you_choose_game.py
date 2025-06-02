@@ -83,45 +83,45 @@ OS = 0
 print()
 while OS == 0 :
     
-    print("    Enter 'quit' if you want to exit the program.")
-    space()
+    print("    Enter 'quit' if you want to exit.")
+    print()
     print()
     print("    Before we begin, which operating system are you using?")
     print()
     print("        1  WINDOWS\n        2  LINUX\n        3  MACOS\n        4  OTHER\n")
+    choice = input("        > ")
 
-    already_chose_os = jmerrells_python_projects.windows == 1 or jmerrells_python_projects.linux == 1 or jmerrells_python_projects.macos == 1 or jmerrells_python_projects.other == 1
-
-    if not already_chose_os :
-        choice = input("        > ")
-
-    windows = (choice == "1" or choice.lower() == "one" or choice.lower() == "i am using windows." or choice.lower() == "windows")
-    linux = (choice == "2" or choice.lower() == "two" or choice.lower() == "i am using linux." or choice.lower() == "linux")
-    macos = (choice == "3" or choice.lower() == "three" or choice.lower() == "i am using macos." or choice.lower() == "macos")
-    other = (choice == "4" or choice.lower() == "four" or choice.lower() == "i am using something else." or choice.lower() == "other")
+    windows = choice == "1" or choice.lower() == "one" or choice.lower() == "i am using windows." or choice.lower() == "windows"
+    linux = choice == "2" or choice.lower() == "two" or choice.lower() == "i am using linux." or choice.lower() == "linux"
+    macos = choice == "3" or choice.lower() == "three" or choice.lower() == "i am using macos." or choice.lower() == "macos"
+    other = choice == "4" or choice.lower() == "four" or choice.lower() == "i am using something else." or choice.lower() == "other"
     quit_game = choice.lower() == "quit" or choice.lower() == "'quit'"
 
     if windows :
         def clear() :
             os.system('cls')
+        windows = 1
         OS = 1
 
     elif linux or macos:
         def clear() :
             os.system('clear')
         OS = 1
+        linux = 1
 
     elif other :
         def clear() :
             space()
         OS = 1
+        other = 1
 
     elif quit_game :
         quit()
     
     else :
-        pleasechoose4()
+        please_choose_4()
         OS = 0
+        other = 1
 
 clear()
 
