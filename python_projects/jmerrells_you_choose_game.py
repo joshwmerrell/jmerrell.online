@@ -92,6 +92,9 @@ import setup_values
 #     def clear() :
 #         space()
 
+def clear() :
+    space()
+
 
 
 
