@@ -1,0 +1,52 @@
+/* Styles are mostly shared between mobile and desktop for this page. */
+
+* {
+    text-align: center;
+}
+
+body, header, main, footer {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+#logo {
+    font-style: italic;
+}
+
+main {
+    max-width: 1000px;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+
+main > * {
+    grid-column: 1/2;
+}
+
+#titles {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#titles > a {
+    height: 100%;
+    width: 100%;
+}
+
+#titles > a button {
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    background-color: white;
+    border: 0;
+}
+
+#titles > a button:hover {
+    background-color: whitesmoke;
+}
+
+footer {
+    margin-top: 3%;
+}
