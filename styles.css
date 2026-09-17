@@ -7,7 +7,11 @@
 body, header, main, footer {
     margin: 0 auto;
     padding: 0;
-    width: 100%;
+    /* width: 100%; */
+}
+
+body {
+    padding: 5% 0;
 }
 
 #logo {
@@ -49,6 +53,14 @@ main > * {
 
 footer {
     margin-top: 3%;
+}
+
+/* Desktop */
+
+@media (min-width: 750px) {
+    body {
+        padding: 5% 10%;
+    }
 }
 
 /* For desktop and mobile devices, I will be adding background images to the main button on the page and it will be displayed a little differently based on if you are using a mobile vs a desktop device.*/
